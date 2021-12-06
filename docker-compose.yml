@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  db:
+    image: mariadb
+    volumes:
+      - /srv/docker/sockets/mariadb:/var/run/mysqld
+    env_file: .env
